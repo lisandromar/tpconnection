@@ -27,7 +27,7 @@
             <a class="nav-link  text-secondary" href="Perfil/Usuario.php">Muro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="#">Comunidad</a>
+            <a class="nav-link text-secondary" href="Perfil/posteos_y_amigos.php">Comunidad</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle  text-secondary" href="#" id="navbarDropdown" role="button"

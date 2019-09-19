@@ -6,7 +6,6 @@
         $telefono = $_POST['telefono'];
         $pagina = $_POST['web'];
         $youtube = $_POST['youtube'];
-        var_dump($_POST);
     }
  ?>
 
