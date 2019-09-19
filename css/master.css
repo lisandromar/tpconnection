@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-} 
+}
 
 .carousel .carousel-inner .carousel-caption p{
     font-family: 'Lato', sans-serif;
@@ -11,7 +11,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 300%;
     color: white;
-    
+
     border: solid grey;
     /* background-color: rgba(0, 0, 0, 0.404); */
     text-transform: uppercase;
@@ -30,6 +30,9 @@ transform: translateY(-60%);
 .nombre_comentario{
     font-family: 'Franklin Gothic Medium';
     color: grey;
+}
+.botonLogin{
+    text-decoration: none;
 }
 h2{
     color: white;

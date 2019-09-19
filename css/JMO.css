@@ -35,3 +35,9 @@ p:focus{
 p:hover{
   text-decoration: underline;
 }
+.botonDeRegistro a{
+    display: flex;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
