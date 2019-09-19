@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto  ">
           <li class="nav-item">
-            <a class="nav-link  text-secondary" href="#">Muro</a>
+            <a class="nav-link  text-secondary" href="Perfil/Usuario.php">Muro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="#">Comunidad</a>
@@ -106,7 +106,7 @@
         <ul>
         <div>
           <h2 class="col-12 d-flex animated bounceInRight ">De qué se trata todo esto?</h2>
-          <p class="animated bounceInLeft">Connection es una herramienta para las personas que aman la música electrónica y quiere compartir experiencias, anécdotas relacionadas con el género.</p>
+          <p class="animated bounceInLeft">Connection es una herramienta para las personas que aman la música electrónica y quieren compartir experiencias, anécdotas relacionadas con el género.</p>
         </div>
 
         <div>
