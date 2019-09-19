@@ -4,17 +4,22 @@
 }
 
 body{
-  background-color: grey;
-  width: 900px;
-  background-image: ;
-  background-repeat:  no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #343A40;
+  width: 100%;
+  height: 100%;
+
+}
+.jmo_container{
+  background-color: #343A40;
+  width: 100%;
+  height: 100%;
+  
+
 
 }
 .marco{
   margin-top: 25px;
-  margin-right: 170px;
+  margin-right: 250px;
   background-color: rgb(137, 15, 14);
   width: 500px;
   border: rgb(137, 15, 14) 10px solid;
