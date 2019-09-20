@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/perfi.css">
+    <link rel="stylesheet" href="../css/perfil.css">
     <title>Usuario</title>
   </head>
   <body>
-      <div class="bg-dark vw-100 vh-100">
+      <div class="bg-dark">
           <div class="container text-light">
              <header class="fixed-top">
                   <nav class="navbar navbar-expand-lg navbar-light bg-dark "  >
@@ -52,9 +52,9 @@
                     </nav>
               </header>
               <br><br><br><br>
-              <div class="lPerfil text-center">
               <h1 class="text-center">Mi perfil</h1>
-                  <ul type="none" class="col 12">
+              <div class="lPerfil text-left row">
+                  <ul type="none" class="col 6">
                       <li>Nombre: <?= $_POST['nombre'] ?? ""; ?> </li>
                       <li>Apellido: <?= $_POST['apellido'] ?? ""; ?> </li>
                       <li>Email: <?= $_POST['email'] ?? ""; ?> </li>
@@ -62,7 +62,13 @@
                       <li>Pagina web: <?= $_POST['web'] ?? ""; ?> </li>
                       <li>Canal de youtube: <?= $_POST['youtube'] ?? ""; ?> </li>
                   </ul>
+                  <div class="imagen text-center">
+                      <img src="http://lorempixel.com/200/200/sports/Dummy-Text" alt="Imagen de perfil">
+                      <br><br>
+                      <button class="btn btn-outline-light" type="file">Cambiar foto</button>
+                  </div>
               </div>
+
           </div>
       </div>
     <!-- Optional JavaScript -->
