@@ -44,8 +44,9 @@ p:hover{
 .botonDeRegistro a{
     display: flex;
     text-align: left;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.9); 
     text-decoration: none;
+    color: white;
 }
 .jmo_titulo{
   color:white;
