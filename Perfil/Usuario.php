@@ -1,15 +1,3 @@
-<?php
-    if ($_POST) {
-        $nombre = $_POST['nombre'];
-        $apellido = $_POST['apellido'];
-        $email = $_POST['email'];
-        $telefono = $_POST['telefono'];
-        $pagina = $_POST['web'];
-        $youtube = $_POST['youtube'];
-    }
- ?>
-
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -66,12 +54,12 @@
           <div class="lPerfil text-center">
           <h1 class="text-center">Mi perfil</h1>
               <ul type="none" class="col 12">
-                  <li>Nombre: <?php if (!empty($nombre)) {echo $nombre;}?> </li>
-                  <li>Apellido: <?php if (!empty($apellido)) {echo $apellido;}?></li>
-                  <li>Email: <?php if (!empty($email)) {echo $email;}?></li>
-                  <li>Teléfono: <?php if (!empty($telefono)) {echo $telefono;}?></li>
-                  <li>Pagina web: <?php if (!empty($pagina)) {echo $pagina;}?></li>
-                  <li>Canal de youtube: <?php if (!empty($youtube)) {echo $youtube;}?></li>
+                  <li>Nombre: <?= $_POST['nombre'] ?? ""; ?> </li>
+                  <li>Apellido: <?= $_POST['apellido'] ?? ""; ?> </li>
+                  <li>Email: <?= $_POST['email'] ?? ""; ?> </li>
+                  <li>Teléfono: <?= $_POST['telefono'] ?? ""; ?> </li>
+                  <li>Pagina web: <?= $_POST['web'] ?? ""; ?> </li>
+                  <li>Canal de youtube: <?= $_POST['youtube'] ?? ""; ?> </li>
               </ul>
           </div>
       </div>
