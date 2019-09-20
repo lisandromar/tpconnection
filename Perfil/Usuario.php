@@ -33,9 +33,9 @@
                                 <a class="nav-link dropdown-toggle  text-secondary" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preguntas</a>
                                 <div class="dropdown-menu bg-dark text-secondary" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-secondary" href="#">Agenda</a>
+                                    <a class="dropdown-item text-secondary" href="#preguntas">De qué se trata todo esto</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-secondary" href="#">Djs</a>
+                                    <a class="dropdown-item text-secondary" href="#tracks">Tracks del Mes</a>>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item text-secondary" href="#">Lugares</a>
                                 </div>

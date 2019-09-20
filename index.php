@@ -33,9 +33,9 @@
             <a class="nav-link dropdown-toggle  text-secondary" href="#" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preguntas</a>
             <div class="dropdown-menu bg-dark text-secondary" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-secondary" href="#">Agenda</a>
+              <a class="dropdown-item text-secondary" href="#preguntas">De qué se trata todo esto</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-secondary" href="#">Djs</a>
+              <a class="dropdown-item text-secondary" href="#tracks">Tracks del Mes</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item text-secondary" href="#">Lugares</a>
             </div>
@@ -97,7 +97,7 @@
   </div>
   <!-- *******************************fqs************************************ -->
 
-  <div class="faq row">
+  <div class="faq row"id=preguntas>
     <h3 class="col-12 d-flex justify-content-center animated rollIn"style="animation-delay: .5s">PREGUNTAS FRECUENTES</h3>
   <br>
   <br>
@@ -125,13 +125,31 @@
             <p class="animated bounceInLeft">Dirigete a la pestaña comunidad > Selecciona <strong>AGREGAR AMIGOS</strong>. Luego presiona <strong>INVITAR AMIGOS</strong>.</p>
           </div>
       </ul>
-        <div>
+        <div >
           <video class="col-12 " autoplay loop muted >
             <source src="video/video pagina club.mp4 "    type="video/mp4" />
           </video>
+          
+          <figure id=tracks>
+          <br>
+            <figcaption class="text-danger  ">Tracks elegidos de este mes:</figcaption>
+            <br>
+            <audio controls="controls ">
+              <source class="bg-dark" src="audio\sebastien leger - rocket to lee's little cloud (original mix).mp3" type="audio/ogg" />
+              <source src="audio\ARTBAT, Dino Lenny - Sand In Your Shoes (Original Mix).mp3" type="audio/mpeg" />
+              </audio>
+                <audio controls="controls">
+                <source src="audio\ARTBAT, Dino Lenny - Sand In Your Shoes (Original Mix).mp3" type="audio/mpeg" />
+              </audio>
+              </audio>
+                <audio controls="controls">
+                <source src="audio\Cid Inc. - Contrite (Original Mix).mp3" type="audio/mpeg" />
+              </audio>
+            </figure>
         </div>
       </section>
   </div>
+
 
 
 
