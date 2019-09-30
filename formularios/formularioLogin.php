@@ -90,8 +90,21 @@
         </nav>
       </header>
       <br>
-
+      <br>
+      <br>
       <div class="">
+        <section class="formularioLogin">
+        <div id="formContainer" class="row align-items-center">
+          <div class="col-8 offset-2  ">
+            <h1>Iniciar Sesión</h1>
+            <?php if(isset($errores)):?>
+              <ul class="alert alert-danger">
+                <?php foreach ($errores as $value) :?>
+                    <li><?=$value;?></li>
+                <?php endforeach;?>
+              </ul>
+            <?php endif;?>
+
         <form id="formulario"  class="form" name="formLogin"     novalidate action=""  method="POST" enctype="multipart/form-data" >
 
                 <div class="form-group">
