@@ -1,13 +1,13 @@
 <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark "  >
-      <a class="navbar-brand text-secondary " href="#">Connection</a>
+      <a class="navbar-brand text-secondary " href="">Connection</a>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto  ">
           <li class="nav-item">
-            <a class="nav-link  text-secondary" href="Perfil/Usuario.php">Muro</a>
+            <a class="nav-link  text-secondary" href="Usuario.php">Muro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="Perfil/posteos_y_amigos.php">Comunidad</a>
+            <a class="nav-link text-secondary" href="posteos_y_amigos.php">Comunidad</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle  text-secondary" href="#" id="navbarDropdown" role="button"
@@ -21,12 +21,12 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="formularios/formularioContacto.php">Contacto</a>
+            <a class="nav-link text-secondary" href="formularioContacto.php">Contacto</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar contenido" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularios/formularioLogin.php">Login</a></button>
+          <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularioLogin.php">Login</a></button>
         </form>
       </div>
     </nav>
