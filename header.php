@@ -24,12 +24,17 @@
             <a class="nav-link text-secondary" href="formularioContacto.php">Contacto</a>
           </li>
         </ul>
-        <?php if(!isset($_SESSION["email"])) : ?>
+        
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar contenido" aria-label="Search">
+            <?php if(!isset($_SESSION["email"])) : ?>
             <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularioLogin.php">Login</a></button>
           </form>
-        <?php endif ?>
+          <?php else :?>
+          <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="logout.php">Logout</a></button>
+          </form>
+          <?php endif ?>
       </div>
     </nav>
   </header>
