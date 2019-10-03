@@ -1,6 +1,6 @@
 <?php
-  require_once('../controladores/funciones.php');
-  require_once('../helpers.php');
+  require_once('controladores/funciones.php');
+  require_once('helpers.php');
   if($_POST){
     $errores = validarLogin($_POST);
     if(count($errores)==0){
@@ -19,7 +19,7 @@
         }else{
           seteoUsuario($usuario,$_POST);
           if(validarUsuario()){
-            header('location:../Perfil/Usuario.php');
+            header('location:Usuario.php');
             exit;
           }else{
             header('location:formularioLogin.php');
@@ -41,7 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario Login</title>
-    <link rel="stylesheet" href="../css/JMO.css">
+    <link rel="stylesheet" href="css/JMO.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -55,40 +55,7 @@
 </head>
 <body>
   <div class="bg-dark vh-100 vw-100">
-  <div class="jmo_container">
-      <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark "  >
-          <a class="navbar-brand text-secondary " href="../index.php">Connection</a>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto  ">
-              <li class="nav-item">
-                <a class="nav-link  text-secondary" href="../Perfil/Usuario.php">Muro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="../Perfil/posteos_y_amigos.php">Comunidad</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  text-secondary" href="#" id="navbarDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preguntas</a>
-                <div class="dropdown-menu bg-dark text-secondary" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item text-secondary" href="#preguntas">De qué se trata todo esto</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-secondary" href="#tracks">Tracks del Mes</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-secondary" href="#">Lugares</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="formularioContacto.html">Contacto</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar contenido" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularioLogin.html">Login</a></button>
-            </form>
-          </div>
-        </nav>
-      </header>
+  <?php include_once('header.php');?>
       <br>
       <br>
       <br>
@@ -109,7 +76,7 @@
 
                 <div class="form-group">
                   <label for="email">Correo electrónico</label>
-                  <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo" value= "<?=isset($errores['email'])? "":old('email') ;?>"
+                  <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo" value= "<?=isset($errores['email'])? "":old('email') ;?>">
                 </div>
 
                 <div class="form-group">
@@ -132,7 +99,7 @@
 
 
 
-
+        <?php include_once ('footer.php') ;?>
 
     </div>
     </div>

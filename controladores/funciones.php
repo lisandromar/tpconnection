@@ -159,7 +159,7 @@ function seteoUsuario($usuario,$dato){
     $_SESSION['role']=$usuario['role'];
     if(isset($dato['recordarme'])){
         setcookie('email',$usuario['email'],time()+3600);
-        setcookie('password',$dato['password'],time()+3600);
+        setcookie('password',$usuario['password'],time()+3600);
     }
 }
 //Con esta función controlo si el usuario se logueo o ya tenemos las cookie en la máquina
