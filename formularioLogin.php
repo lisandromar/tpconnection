@@ -54,8 +54,8 @@
 
 </head>
 <body>
-  <div class="bg-dark vh-100 vw-100">
-  <?php include_once('header.php');?>
+  <div class="bg-dark">
+    <?php include_once('header.php');?>
       <br>
       <br>
       <br>
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="form-group">
-                  <input  class="text-left" name="recordarme" type="checkbox" value= "recordarme" class="form-control " id="recordarme" >
+                  <input  class="text" name="recordarme" type="checkbox" value= "recordarme" class="form-control " id="recordarme" >
                   <label for="recordarme">Recordarme</label>
                 </div>
 
@@ -99,7 +99,7 @@
 
 
 
-        <?php include_once ('footer.php') ;?>
+        <?php include_once('footer.php') ;?>
 
     </div>
     </div>

@@ -6,5 +6,7 @@ session_destroy();
 //Coloque esto en comentario para perdurar las cookies en el navegador del usuario
 //setcookie('email',"",time()-1);
 //setcookie('password',"",time()-1);
-header('location:login.php');
+header('location:formulariologin.php');
 exit;
+
+?>

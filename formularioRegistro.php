@@ -28,76 +28,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de Registro</title>
-    <link rel="stylesheet" href="../css/JMO.css">
+    <link rel="stylesheet" href="css/JMO.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo:200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../animate.css-master/animate.css">
 
 </head>
 <body>
-<?php include_once('header.php');?>
-      <br>
-      <br>
-      <br>  
-      <div class="">
+    <div class="bg-dark">
+        <?php include_once('header.php');?>
+        <br>
+        <br>
+        <br>
         <section class="formulario">
-        <div id="formContainer" class="row align-items-center">
-          <div class="col-8 offset-2  ">
-            <h1>Registración</h1>
-            <?php if(isset($errores)):?>
-              <ul class="alert alert-danger">
-                <?php foreach ($errores as $value) :?>
-                    <li><?=$value;?></li>
-                <?php endforeach;?>
-              </ul>
-            <?php endif;?>
+          <div id="formContainer" class="row align-items-center">
+            <div class="col-8 offset-2  ">
+              <h1>Registración</h1>
+              <?php if(isset($errores)):?>
+                <ul class="alert alert-danger">
+                  <?php foreach ($errores as $value) :?>
+                      <li><?=$value;?></li>
+                  <?php endforeach;?>
+                </ul>
+              <?php endif;?>
 
-        <form id="formulario"  class="form" name="formRegistro"     novalidate action=""  method="POST" enctype="multipart/form-data" >
-                <div class="form-group">
-                    <label for="userName">Nombre de usuario</label>
-                    <input required name="userName" type="text" value= "<?=isset($errores['username'])? "":old('userName') ;?>" class="form-control" id="userName" placeholder="Nombre de usuario">
-                </div>
-                <div>
-                  <!--Aquí les comparto este otro código donde pueden mostrar el error en el mismo lugar donde se produjo, usted decide como desea mostrar los errores-->
-                  <?php if(isset($errores['userName'])):?>
-                    <h6 class="text-danger"><?= $errores['userName'];?></h6>
-                  <?php endif;?>
-                </div>
+              <form id="formulario"  class="form" name="formRegistro"     novalidate action=""  method="POST" enctype="multipart/form-data" >
+                  <div class="form-group">
+                      <label for="userName">Nombre de usuario</label>
+                      <input required name="userName" type="text" value= "<?=isset($errores['username'])? "":old('userName') ;?>" class="form-control" id="userName" placeholder="Nombre de usuario">
+                  </div>
+                  <div>
+                    <!--Aquí les comparto este otro código donde pueden mostrar el error en el mismo lugar donde se produjo, usted decide como desea mostrar los errores-->
+                    <?php if(isset($errores['userName'])):?>
+                      <h6 class="text-danger"><?= $errores['userName'];?></h6>
+                    <?php endif;?>
+                  </div>
 
-                <div class="form-group">
-                  <label for="email">Correo electrónico</label>
-                  <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo" value= "<?=isset($errores['email'])? "":old('email') ;?>"
-                </div>
+                  <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo" value= "<?=isset($errores['email'])? "":old('email') ;?>">
+                  </div>
 
-                <div class="form-group">
-                  <label for="password">Contraseña</label>
-                  <input required name="password" type="password" value= "" class="form-control" id="password" placeholder="Contraseña">
+                  <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input required name="password" type="password" value= "" class="form-control" id="password" placeholder="Contraseña">
 
-                  <small class="form-text text-muted">Al menos 6 caracteres, debe contenter sólo números</small>
-                </div>
+                    <small class="form-text text-muted">Al menos 6 caracteres, debe contenter sólo números</small>
+                  </div>
 
-                <div class="form-group">
-                  <label for="password">Repetir contraseña</label>
-                  <input required name="passwordRepeat" type="password" value= ""class="form-control" id="passwordRepeat" placeholder="Repetir contraseña">
-                </div>
+                  <div class="form-group">
+                    <label for="password">Repetir contraseña</label>
+                    <input required name="passwordRepeat" type="password" value= ""class="form-control" id="passwordRepeat" placeholder="Repetir contraseña">
+                  </div>
 
-                <button type="submit" class="btn btn-primary">Registrarme</button>
-                <a href="formularioLogin.php" class="btn btn-link">Ya poseo una cuenta</a>
-              </form>
+                  <button type="submit" class="btn btn-primary">Registrarme</button>
+                  <a href="formularioLogin.php" class="btn btn-link">Ya poseo una cuenta</a>
+                </form>
+              </div>
+            </div>
+          </section>
+          <?php include_once('footer.php') ;?>
         </div>
 
-
-
-
-        <?php include_once ('footer.php') ;?>
-  </div>
-</div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

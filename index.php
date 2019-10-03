@@ -1,3 +1,8 @@
+<?php
+require_once("controladores/funciones.php");
+require_once("helpers.php");
+ ?>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -148,7 +153,7 @@
 
 
 
-<?php include_once ('footer.php') ;?>
+<?php include_once('footer.php') ;?>
 
 
 

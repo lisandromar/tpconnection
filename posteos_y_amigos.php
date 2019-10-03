@@ -1,4 +1,8 @@
 <?php
+require_once("controladores/funciones.php");
+require_once("helpers.php");
+ ?>
+<?php
     if ($_POST) {
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
@@ -25,7 +29,7 @@
   </head>
   <body class="bg-dark">
   <?php include_once('header.php');?>
-  
+
    <br><br>
           <div class="amigos">
               <a class="nav-link dropdown-toggle  text-light text-center" href="#" id="navbarDropdown" role="button"
@@ -67,8 +71,8 @@
                     </p>
           </div>
       </div>
-      <?php include_once ('footer.php') ;?>
-      
+      <?php include_once('footer.php') ;?>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

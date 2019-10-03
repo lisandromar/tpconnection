@@ -1,3 +1,8 @@
+<?php
+require_once("controladores/funciones.php");
+require_once("helpers.php");
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,7 +14,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo:200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../animate.css-master\animate.css">
@@ -20,6 +25,7 @@
     <div class="jmo_container">
 
       <?php include_once('header.php');?>
+      <br>
       <br>
       <div class="marco">
         <fieldset>
@@ -61,8 +67,9 @@
         </fieldset>
       </div>
     </div>
-    </div>
     <?php include_once ('footer.php') ;?>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
