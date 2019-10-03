@@ -46,7 +46,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar contenido" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularios/formularioLogin.html">Login</a></button>
+          <button class="btn btn-outline-light my-2 my-sm-0 botonLogin" type="submit"><a href="formularios/formularioLogin.php">Login</a></button>
         </form>
       </div>
     </nav>
@@ -129,7 +129,7 @@
           <video class="col-12 " autoplay loop muted >
             <source src="video/video pagina club.mp4 "    type="video/mp4" />
           </video>
-          
+
           <figure id=tracks>
           <br>
             <figcaption class="text-danger  ">Tracks elegidos de este mes:</figcaption>
