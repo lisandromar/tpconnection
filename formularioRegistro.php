@@ -1,16 +1,18 @@
 <?php
   //Esto debo hacerlo, para lograr que este programa logré visualizar las funciones creadas y de esa forma poder usarlas cuando desee.
-  require_once("controladores/funciones.php");
-  require_once("helpers.php");
+  require_once("loader.php");
+
   if($_POST){
-   $errores = validar($_POST,$_FILES);
+    $usuario= New Usuario($_POST[$email],$_POST[$password],$_POST[$userName],$_POST[$repassword] ,$_FILES);
+    $errores =$validarUsuario-> validar($usuario);
    if(count($errores)==0){
-    $usuario = buscarPorEmail($_POST["email"]);
-    if($usuario !== null){
+    $usuarioEncontrado = $jsonUsuario->buscar($usuario->getEmail());
+    if($usuarioEncontrado != null){
       $errores["email"]="Usuario ya registrado";
     }else{
-      $registro = armarRegistro($_POST);
-      guardarRegistro($registro);
+      $avatar=$armar->armarAvatar($usuario->getAvatar());
+      $registro = $armar->armarRegistro($usuario,$avatar);
+      $jsonUsuario->guardar($registro);
      //De no excistir errores en la información tipeada por el usuario entonces lo redirecciono a donde yo desee.
 
       header("location:formularioLogin.php");
