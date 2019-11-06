@@ -1,8 +1,4 @@
 <?php
-require_once("css/JMO.css");
-require_once("css/master.css");
-require_once("css/perfil.css");
-
 
 require_once("helpers.php");
 require_once("clases/Usuario.php");
@@ -12,9 +8,8 @@ require_once("clases/BaseDato.php");
 require_once("clases/BaseJson.php");
 require_once("clases/Encriptar.php");
 //require_once("clases/BaseMYSQL.php");
-//require_once("clases/Autenticador.php");
+require_once("clases/Autenticador.php");
 //require_once("clases/Query.php");
-
 
 
 //Declaro mis variables
@@ -32,7 +27,7 @@ $charset = "utf8mb4";
 $validarUsuario = new Validador();
 $armar = new Armador();
 $jsonUsuario = new BaseJSON("usuarios.json");
-//Autenticador::iniciarSession();
+Autenticador::iniciarSession();
 
 
 
